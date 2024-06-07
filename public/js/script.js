@@ -114,4 +114,27 @@ Math.max(78, 12, 98, 14, 89);
 1 * 2 + 3 - 4 / 2 % 2**2;
 
 // Handling user inputs
-1200 + Number('250')
+1200 + Number('250')// String concatenation
+const firstname = 'Eunice ' ;
+const lastname = 'Afrifa';
+firstname.trim() + ' ' + lastname.trim();
+
+// Template literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length;
+(firstname.trim() + ' ' + lastname.trim()).length;
+firstname.toUpperCase();
+lastname.charAt(1);
+`${firstname.trim()} ${lastname.trim()}`.charAt(0);
+`${firstname.trim().charAt()}${lastname.trim().charAt()}`;
+`${firstname.trim().charAt()} ${lastname.trim().charAt()}`;
+`${lastname.trim().charAt()}${firstname.trim().charAt()}`;
+
+// String conversion
+String(2014);
+
+
