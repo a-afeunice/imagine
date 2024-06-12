@@ -205,6 +205,45 @@ numbers.filter (even);
 
 // Array methods in JavaScript
 
+// Write a function that takes a user with name and dateOfBirth and returns true if their birthday is today else false
+// const user = {
+//   name: 'Martin King',
+//   dateOfBirth: '1990-06-12'
+// }
+function isBirthday(user) {
+  const today = new Date();
+  const birthDate = new Date(user.dateOfBirth);
+  // console.log(birthDate.getMonth(), today.getMonth());
+  // console.log(birthDate.getDate(), today.getDate());
+  if (today.getMonth() === birthDate.getMonth() && today.getDate() === birthDate.getDate()) {
+    return true;
+  } else {
+    return false;
+  }
+    
+}
+
+
+isBirthday(user);
+
+
+// Write a function that takes a user with name and dateOfBirth and returns birthday with their name if their birthday is today else return not your day
+
+function birthdayMessage(user) {
+   if (isBirthday(user)) {
+  return "happy birthday Martin!";
+ } else {
+   return 'not your day';
+ }
+ }
+
+birthdayMessage(user);
+
+
+
+
+
+
 
 
 
