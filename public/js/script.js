@@ -238,6 +238,30 @@ function birthdayMessage(user) {
  }
 
 birthdayMessage(user);
+// Bottle class
+class Bottle {
+  constructor(color, shape, volume) {
+    this.color = color;
+    this.shape = shape;
+    this.volume = volume;
+  }
+
+ getInfo() {
+  return `This is a ${this.color} ${this.shape} bottle with a capacity of ${this.volume}ml`;
+ }
+}
+
+class Car {}
+
+const bottle1 = new Bottle('black', 'circle', 300);
+bottle1.getInfo();
+const bottle2 = new Bottle('pink', 'square', 100);
+bottle2.getInfo();
+
+bottle1 instanceof Car;
+
+
+
 
 
 
